@@ -142,5 +142,3 @@ SELECT Courses.Course_id, Courses.Course_name FROM Courses WHERE Courses.Course_
 SELECT s.Name AS Student_Name, c.Course_name, d.Department_name FROM Students s JOIN Enrollments e ON s.student_id = e.student_id JOIN Courses c ON e.Course_id = c.Course_id
 JOIN Departments d ON c.Department_id = d.Department_id WHERE d.Department_id = 103;  -- specific department
 
--- Question Number 7
-
